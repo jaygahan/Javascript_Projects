@@ -51,6 +51,7 @@ td {
     border-style: groove;
     border-color: #e5e6e8;
 }
+
 table tr:nth-child(-n+3) td:nth-child(-n+3) {
     background-color: #d7f3f7;
 }
@@ -78,7 +79,6 @@ table tr:nth-child(3) td:nth-child(1) {
 .O {
     transition: transform .3s;
     opacity: 1;
-    position: absolute;
     background-image: url("../images/avatarO.png");
     width:200px; 
     height:200px;
@@ -88,7 +88,6 @@ table tr:nth-child(3) td:nth-child(1) {
 .X {
     transition: transform .3s;
     opacity: 1;
-    position: absolute;
     background-image: url("../images/avatarX.png");
     width:200px; 
     height:200px;
@@ -147,7 +146,7 @@ table tr:nth-child(3) td:nth-child(1) {
     border-radius: 10px;
 }
 
-.boxRight>butoon:hover {
+.boxRight>button:hover {
     background-color: rgba(237, 234, 234, .95);
     border: 1px solid rgba(0,0,0,0.85);
     box-shadow: 3px 3px 15px -4px rgba(0,0,0,0.65);
@@ -238,7 +237,7 @@ table tr:nth-child(3) td:nth-child(1) {
     background-color: rgb(255, 51, 51);
     margin: 20px 0px 0px 10px;
     padding: 12px 14px 12px 14px;
-    box-shadow: inset 3px 3px 15px -2px rgba(255,255,255,0.95), 3px 3px 15px -4px rgba(0,0,0,0.65);
+    box-shadow: inset 3px 3px 15px -2px rgba(255,255,255,0.95), 3px 3px 15px -4px rgba(0,0,0,0.85);
     border-radius: 10px;
 }
 
