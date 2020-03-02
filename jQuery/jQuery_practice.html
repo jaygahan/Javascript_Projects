@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+            </script>
+            <script>
+            $(document).ready(function(){
+                $("#p1").hover(function(){
+                    alert("You entered p1!");
+                },
+                function(){
+                    alert("Bye! You now leave p1!");
+                });
+            });
+            </script>
+    </head>
+    <body>
+        <p id="p1">This is a paragraph.</p>
+    </body>
+    <script>
+
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideDown("slow");
+
+            });
+        });
+    </script>
+    <style>
+    #panel, #flip {
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+    }
+    #panel {
+        padding: 50px; 
+        display: none;
+    }
+    </style>
+
+    <body>
+    <div id="flip">Click to slide down panel</div>
+    <div id="panel">Hello world!</div>
+
+    </body>
+</html>
